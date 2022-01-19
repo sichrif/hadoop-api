@@ -1,0 +1,19 @@
+{
+  "name": "bigdata-api",
+  "version": "1.0.0",
+  "description": "api ",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "chrif",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15"
+  }
+}
