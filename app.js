@@ -18,7 +18,7 @@ const client = await MongoClient.connect(dburl, {
 // specify the DB's name
 const db = client.db('hadoop');
 // execute find query
-const items = await db.collection('books').find({},{'_id':false}).toArray();
+const items = await db.collection('books').find({"year":{$lt:"2022"}},{projection:{ _id: 0 }}).toArray();
 client.close();
 
 res.send(items);
